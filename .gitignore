@@ -1,0 +1,6 @@
+# disabled files
+bundle-disabled
+# history
+.netrwhist
+# autoload -- symlinked to bundle/pathogen/autoload
+autoload
