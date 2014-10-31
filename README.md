@@ -7,5 +7,7 @@ cd ~/
 git clone https://github.com/gcochard/.vim.git .vim
 ln -s .vim/vimrc .vimrc
 cd .vim
-git submodule update --init
+git submodule update --init --recursive
+cd bundle/YouCompleteMe
+./install.sh
 ```
