@@ -12,7 +12,6 @@ endif
 let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_checkers = ['eslint', 'jslint']
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_auto_loc_list = 1
 nnoremap + :s/\v^(\s+)?/\1\/\//<CR>
 nnoremap - :s/\v^(\s+)?\/\//\1/<CR>
 nnoremap <leader>+ :*s//\/*\1*\//<CR>
