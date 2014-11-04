@@ -43,3 +43,4 @@ cnoremap p4l !p4 login<CR>
 cnoremap <leader>w execute "normal! :match Error " . '/\v +$/' . "\<CR>"
 cnoremap <leader>W execute "normal! :match Error /\v^$/\<CR>"
 nnoremap / /\v
+set linebreak
