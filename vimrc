@@ -44,3 +44,4 @@ cnoremap <leader>w execute "normal! :match Error " . '/\v +$/' . "\<CR>"
 cnoremap <leader>W execute "normal! :match Error /\v^$/\<CR>"
 nnoremap / /\v
 set linebreak
+autocmd FileType python,yaml BracelessEnable +indent +fold +highlight-cc2
