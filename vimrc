@@ -11,6 +11,7 @@ endif
 "let g:syntastic_javascript_checkers = ['jslint']
 let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_checkers = ['eslint', 'jslint']
+let g:syntastic_python_checkers = ['python', 'flake8']
 let g:syntastic_aggregate_errors = 1
 nnoremap + :s/\v^(\s+)?/\1\/\//<CR>
 nnoremap - :s/\v^(\s+)?\/\//\1/<CR>
@@ -31,8 +32,8 @@ endfunction
 nnoremap <leader>ml :call AppendModeline()<CR>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :sou $MYVIMRC<CR>
-iabbrev @@ greg.cochard@gmail.com
-iabbrev copy Copyright 2014 Greg Cochard, all rights reserved.
+"iabbrev @@ greg.cochard@gmail.com
+"iabbrev copy Copyright 2014 Greg Cochard, all rights reserved.
 noremap <left> <nop>
 noremap <right> <nop>
 noremap <up> <nop>
@@ -44,4 +45,3 @@ cnoremap <leader>w execute "normal! :match Error " . '/\v +$/' . "\<CR>"
 cnoremap <leader>W execute "normal! :match Error /\v^$/\<CR>"
 nnoremap / /\v
 set linebreak
-autocmd FileType python,yaml BracelessEnable +indent +fold +highlight-cc2
