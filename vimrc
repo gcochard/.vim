@@ -33,7 +33,6 @@ nnoremap <leader>ml :call AppendModeline()<CR>
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :sou $MYVIMRC<CR>
 "iabbrev @@ greg.cochard@gmail.com
-"iabbrev copy Copyright 2014 Greg Cochard, all rights reserved.
 noremap <left> <nop>
 noremap <right> <nop>
 noremap <up> <nop>
