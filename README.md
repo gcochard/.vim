@@ -1,5 +1,6 @@
 # .vim
-My .vim directory, as a git repo with all other github projects as submodules.
+My .vim directory, as a git repo with all other
+github projects as submodules.
 
 ## Installation
 ```bash
