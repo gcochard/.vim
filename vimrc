@@ -1,7 +1,7 @@
 let mapleader = ","
 execute pathogen#infect()
 filetype plugin indent on
-set expandtab softtabstop=4 tabstop=4 shiftwidth=4 smartindent smarttab
+set expandtab softtabstop=2 tabstop=2 shiftwidth=2 smartindent smarttab
 set background=dark
 if has("gui_running")
     colorscheme solarized
@@ -47,3 +47,11 @@ cnoremap <leader>w execute "normal! :match Error " . '/\v +$/' . "\<CR>"
 cnoremap <leader>W execute "normal! :match Error /\v^$/\<CR>"
 nnoremap / /\v
 set linebreak
+" add yaml stuffs
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+set ignorecase
+set smartcase
+let g:jsx_ext_required = 0
+set directory^=$HOME/.vim/tmp//
