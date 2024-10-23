@@ -3,11 +3,7 @@ execute pathogen#infect()
 filetype plugin indent on
 set expandtab softtabstop=2 tabstop=2 shiftwidth=2 smartindent smarttab
 set background=dark
-if has("gui_running")
-    colorscheme solarized
-else
-    colorscheme slate
-endif
+colorscheme solarized
 "let g:syntastic_javascript_checkers = ['jslint']
 let g:syntastic_javascript_checkers = ['eslint']
 "let g:syntastic_javascript_checkers = ['eslint', 'jslint']
